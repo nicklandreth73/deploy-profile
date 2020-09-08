@@ -1,38 +1,123 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* special theme button position for consistency*/
+.themeButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* These are the two classes for the main body*/
+.lightText {
+  font-family: cursive;
+  color: rgb(255, 255, 255);
+  height: 100%;
+  padding-top: 14vh;
+  margin-bottom: 0px;
+}
+.darkText {
+  font-family: "Times New Roman";
+  color: rgb(0, 0, 0);
+  height: 100%;
+  padding-top: 14vh;
+  margin-bottom: 0px;
+}
+/*Set the background to different pictures for dark or light mode. 
+These classes will expand the background for smaller divs
+*/
+.darkMode {
+  background-image: url("./Images/moon.jpg");
+  height: 200vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lightMode {
+  background-image: url("./Images/hills.jpg");
+  height: 200vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Menu text colors*/
+.menu-text-light {
+  color: azure;
+  display: block;
+  height: 2rem;
+  padding-inline-end: 2rem;
+}
+.menu-text-dark {
+  color: black;
+  display: block;
+  height: 2rem;
+  padding-inline-end: 2rem;
+}
+.menu-text-light:hover {
+  color: lightgrey;
+}
+.menu-text-dark:hover {
+  color: darkslategray;
+}
+/*Styling for the projects pancake*/
+.pancakePage {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.hotcakes {
+  flex: 0 1 150px;
+  margin: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* These backgrounds follow content for longer components.*/
+.darkModeProject {
+  background-image: url("./Images/moon.jpg");
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 14vh;
+  margin-bottom: 0px;
+}
+.lightModeProject {
+  background-image: url("./Images/hills.jpg");
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 14vh;
+  margin-bottom: 0px;
+}
+/*carousel  customization for projects*/
+span.carousel-control-next-icon {
+  background-image: none;
+}
+span.carousel-control-prev-icon {
+  background-image: none;
+}
+img.carousel-image {
+  height: 22em;
+  min-width: 20em;
+}
+.carousel-label {
+  text-align: center;
+}
+/*screen size rules for special situations. */
+@media only screen and (max-width: 500px) {
+  img.carousel-image {
+    height: 15em;
+    min-width: 12em;
+    max-width: 20em;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (min-width: 1800px) {
+  img.carousel-image {
+    height: 30em;
+    min-width: 25em;
   }
 }
