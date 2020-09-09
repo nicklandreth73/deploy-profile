@@ -13,14 +13,14 @@
   font-family: cursive;
   color: rgb(255, 255, 255);
   height: 100%;
-  padding-top: 14vh;
+  padding-top: 12vh;
   margin-bottom: 0px;
 }
 .darkText {
   font-family: "Times New Roman";
   color: rgb(0, 0, 0);
   height: 100%;
-  padding-top: 14vh;
+  padding-top: 12vh;
   margin-bottom: 0px;
 }
 /*Set the background to different pictures for dark or light mode. 
@@ -79,7 +79,7 @@ These classes will expand the background for smaller divs
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 14vh;
+  padding-top: 10vh;
   margin-bottom: 0px;
 }
 .lightModeProject {
@@ -90,7 +90,7 @@ These classes will expand the background for smaller divs
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 14vh;
+  padding-top: 10vh;
   margin-bottom: 0px;
 }
 /*carousel  customization for projects*/
@@ -106,6 +106,40 @@ img.carousel-image {
 }
 .carousel-label {
   text-align: center;
+}
+/* Form rules*/
+.formContainer {
+  margin: 10% auto;
+  padding: 80px 0;
+  text-align: center;
+  justify-content: center;
+}
+.form-child {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+}
+.form-child:hover {
+  background-color: white;
+}
+.submit-button {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(41, 39, 46, 0.3);
+  width: 250px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+.submit-button:hover {
+  background-color: rgba(41, 39, 46, 0.7);
 }
 /*screen size rules for special situations. */
 @media only screen and (max-width: 500px) {
