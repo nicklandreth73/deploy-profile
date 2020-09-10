@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/deploy-profile/static/css/main.9f7ab31d.chunk.css",
+    "main.js": "/deploy-profile/static/js/main.7478189b.chunk.js",
+    "main.js.map": "/deploy-profile/static/js/main.7478189b.chunk.js.map",
+    "runtime-main.js": "/deploy-profile/static/js/runtime-main.406236ec.js",
+    "runtime-main.js.map": "/deploy-profile/static/js/runtime-main.406236ec.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/deploy-profile/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.19101ac3.chunk.js": "/deploy-profile/static/js/2.19101ac3.chunk.js",
+    "static/js/2.19101ac3.chunk.js.map": "/deploy-profile/static/js/2.19101ac3.chunk.js.map",
+    "index.html": "/deploy-profile/index.html",
+    "precache-manifest.b9527a5a17f8dede9534b42f5b6678a3.js": "/deploy-profile/precache-manifest.b9527a5a17f8dede9534b42f5b6678a3.js",
+    "service-worker.js": "/deploy-profile/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/deploy-profile/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.9f7ab31d.chunk.css.map": "/deploy-profile/static/css/main.9f7ab31d.chunk.css.map",
+    "static/js/2.19101ac3.chunk.js.LICENSE.txt": "/deploy-profile/static/js/2.19101ac3.chunk.js.LICENSE.txt",
+    "static/media/CPlusBooks.png": "/deploy-profile/static/media/CPlusBooks.7f8ca5a0.png",
+    "static/media/DarkMode.png": "/deploy-profile/static/media/DarkMode.14f7af9e.png",
+    "static/media/LightMode.png": "/deploy-profile/static/media/LightMode.7da43107.png",
+    "static/media/Mobile1.jpg": "/deploy-profile/static/media/Mobile1.34dd0a23.jpg",
+    "static/media/Mobile2.jpg": "/deploy-profile/static/media/Mobile2.ac461558.jpg",
+    "static/media/Mobile3.jpg": "/deploy-profile/static/media/Mobile3.7a48db75.jpg",
+    "static/media/Software11.png": "/deploy-profile/static/media/Software11.6ee149d0.png",
+    "static/media/Software12.png": "/deploy-profile/static/media/Software12.e6dba7df.png",
+    "static/media/Software13.png": "/deploy-profile/static/media/Software13.d2d0faa9.png",
+    "static/media/Software21.png": "/deploy-profile/static/media/Software21.08197d1b.png",
+    "static/media/Software22.png": "/deploy-profile/static/media/Software22.01b8021e.png",
+    "static/media/Software23.png": "/deploy-profile/static/media/Software23.6d4ee2ad.png",
+    "static/media/App.css": "/deploy-profile/static/media/moon.c924c1da.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.406236ec.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.19101ac3.chunk.js",
+    "static/css/main.9f7ab31d.chunk.css",
+    "static/js/main.7478189b.chunk.js"
+  ]
+}
