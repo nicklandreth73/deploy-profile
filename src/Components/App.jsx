@@ -4,8 +4,9 @@ import Heading from "./Heading/Heading";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Projects from "./Pages/Projects/Projects";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Contact from "./Pages/Contact/Contact";
+import Footer from "./Footer/Footer";
 
 export default function App() {
   const [isDark, setIsDark] = useState(true);
@@ -37,6 +38,7 @@ export default function App() {
           </Switch>
         </div>
       </Router>
+      <Footer isDark={isDark} />
     </div>
   );
 }

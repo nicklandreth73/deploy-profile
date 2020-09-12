@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
+import emailjs from "emailjs-com";
 
 function Form(props) {
   const [formInput, setFormInput] = useState({
@@ -9,6 +9,36 @@ function Form(props) {
     phone: "",
     message: "",
   });
+
+  //Email function
+  function sendEmail(e) {
+    e.preventDefault();
+    console.log(e);
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_p5sgq4k",
+        e.target,
+        "user_TLXygmes6KegCbj2RGdPc"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    setFormInput({
+      fName: "",
+      lName: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+    console.log(formInput);
+  }
+  //state management
   function handleChange(event) {
     const { name, value } = event.target;
     setFormInput((prevValue) => {
@@ -54,14 +84,14 @@ function Form(props) {
         };
     });
   }
-
+  // Actual JSX code
   return (
     <div className={props.isDark ? "lightText" : "darkText"}>
       <div className="formContainer">
         <h1>
           Hello {formInput.fName} {formInput.lName}
         </h1>
-        <form>
+        <form onSubmit={sendEmail}>
           <input
             className="form-child"
             placeholder="First Name"

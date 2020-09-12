@@ -49,7 +49,7 @@ const ProjectImages = [
     image1: DarkMode,
     image2: LightMode,
     image3: "",
-    codeLink: "#",
+    codeLink: "https://github.com/nicklandreth73/react-profile",
   },
 ];
 
