@@ -4,7 +4,9 @@ import Quote from "./Quote";
 function Home(props) {
   return (
     <div className={props.isDark ? "darkMode" : "lightMode"}>
-      <Quote isDark={props.isDark} />
+      <div className="home-page">
+        <Quote isDark={props.isDark} />
+      </div>
     </div>
   );
 }

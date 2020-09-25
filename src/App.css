@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+.home-page {
+  padding-bottom: 50vh;
+}
 /* special theme button position for consistency*/
 .themeButton {
   position: absolute;
@@ -13,14 +16,14 @@
   font-family: cursive;
   color: rgb(255, 255, 255);
   height: 100%;
-  padding-top: 12vh;
+  padding-top: 5rem;
   margin-bottom: 0px;
 }
 .darkText {
   font-family: "Times New Roman";
   color: rgb(0, 0, 0);
   height: 100%;
-  padding-top: 12vh;
+  padding-top: 5rem;
   margin-bottom: 0px;
 }
 /*Set the background to different pictures for dark or light mode. 
@@ -151,21 +154,67 @@ img.carousel-image {
   bottom: 0px;
   width: 100%;
   height: 20vh;
-  background-color: #2e2e2e;
+  background-color: #343a40;
+  text-align: center;
+  padding: 4vh;
 }
 .light-footer {
   position: relative;
   bottom: 0px;
   width: 100%;
   height: 20vh;
-  background-color: #33b5e5;
+  background-color: #17a2b8;
+  text-align: center;
+  padding: 4vh;
 }
+.icon-dark {
+  padding-left: 10vh;
+  color: azure;
+}
+.icon-light {
+  padding-left: 10vh;
+  color: black;
+}
+
 /*screen size rules for special situations. */
 @media only screen and (max-width: 700px) {
   img.carousel-image {
     height: 15em;
     min-width: 12em;
     max-width: 20em;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .icon-dark {
+    display: block;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .icon-light {
+    display: block;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .dark-footer {
+    height: 100%;
+  }
+  .light-footer {
+    height: 100%;
+    bottom: 0px;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .icon-dark {
+    padding-left: 3vh;
+  }
+  .icon-light {
+    padding-left: 3vh;
+  }
+  .dark-footer {
+    padding: 0px;
+  }
+  .light-footer {
+    padding: 0px;
   }
 }
 @media only screen and (min-width: 1200px) {

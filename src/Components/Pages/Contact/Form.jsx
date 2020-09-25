@@ -11,7 +11,8 @@ function Form(props) {
   });
 
   //Email function
-  function sendEmail(e) {
+  function handleSubmit(e) {
+    alert("Submitted");
     e.preventDefault();
     console.log(e);
     emailjs
@@ -91,7 +92,7 @@ function Form(props) {
         <h1>
           Hello {formInput.fName} {formInput.lName}
         </h1>
-        <form onSubmit={sendEmail}>
+        <form onSubmit={handleSubmit}>
           <input
             className="form-child"
             placeholder="First Name"
