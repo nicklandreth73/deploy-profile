@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import InputField from "./InputField"
 
-function Form(props) {
+function Form({isDark}) {
   const [formInput, setFormInput] = useState({
     fName: "",
     lName: "",
@@ -44,94 +45,26 @@ function Form(props) {
     const { name, value } = event.target;
     setFormInput((prevValue) => {
       if (name === "fName")
-        return {
-          fName: value,
-          lName: prevValue.lName,
-          email: prevValue.email,
-          phone: prevValue.phone,
-          message: prevValue.message,
-        };
+      return {...prevValue, fName: value};
       else if (name === "lName")
-        return {
-          fName: prevValue.fName,
-          lName: value,
-          email: prevValue.email,
-          phone: prevValue.phone,
-          message: prevValue.message,
-        };
+        return {...prevValue, lName: value};
       else if (name === "email")
-        return {
-          fName: prevValue.fName,
-          lName: prevValue.lName,
-          email: value,
-          phone: prevValue.phone,
-          message: prevValue.message,
-        };
+      return {...prevValue, email: value};
       else if (name === "phone")
-        return {
-          fName: prevValue.fName,
-          lName: prevValue.lName,
-          email: prevValue.email,
-          phone: value,
-          message: prevValue.message,
-        };
+      return {...prevValue, phone: value};
       else if (name === "message")
-        return {
-          fName: prevValue.fName,
-          lName: prevValue.lName,
-          email: prevValue.email,
-          phone: prevValue.phone,
-          message: value,
-        };
+      return {...prevValue, message: value};
     });
   }
   // Actual JSX code
   return (
-    <div className={props.isDark ? "lightText" : "darkText"}>
+    <div className={isDark ? "lightText" : "darkText"}>
       <div className="formContainer">
         <h1>
           Hello {formInput.fName} {formInput.lName}
         </h1>
         <form onSubmit={handleSubmit}>
-          <input
-            className="form-child"
-            placeholder="First Name"
-            name="fName"
-            type="text"
-            value={formInput.fName}
-            onChange={handleChange}
-          />
-          <input
-            className="form-child"
-            placeholder="Last Name"
-            name="lName"
-            type="text"
-            value={formInput.lName}
-            onChange={handleChange}
-          />
-          <input
-            className="form-child"
-            placeholder="Email"
-            name="email"
-            type="email"
-            value={formInput.email}
-            onChange={handleChange}
-          />
-          <input
-            className="form-child"
-            placeholder="Phone"
-            name="phone"
-            type="tel"
-            value={formInput.phone}
-            onChange={handleChange}
-          />
-          <textarea
-            className="form-child"
-            name="message"
-            placeholder="How can I help you?"
-            value={formInput.message}
-            onChange={handleChange}
-          />
+        {Object.keys(formInput).map((field, fieldValue) => <InputField fieldName={field} formInput={fieldValue} handleChange={handleChange} />)}
           <button className="submit-button">Submit</button>
         </form>
       </div>

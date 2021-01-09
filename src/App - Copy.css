@@ -1,0 +1,233 @@
+.App {
+  text-align: center;
+}
+.home-page {
+  padding-bottom: 50vh;
+}
+/* special theme button position for consistency*/
+.themeButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* These are the two classes for the main body*/
+.lightText {
+  font-family: cursive;
+  color: rgb(255, 255, 255);
+  height: 100%;
+  padding-top: 5rem;
+  margin-bottom: 0px;
+}
+.darkText {
+  font-family: "Times New Roman";
+  color: rgb(0, 0, 0);
+  height: 100%;
+  padding-top: 5rem;
+  margin-bottom: 0px;
+}
+/*Set the background to different pictures for dark or light mode. 
+These classes will expand the background for smaller divs
+*/
+.darkMode {
+  position: relative;
+  background-image: url("./Images/moon.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 12vh;
+}
+.lightMode {
+  position: relative;
+  background-image: url("./Images/hills.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 12vh;
+}
+
+/*Menu text colors*/
+.menu-text-light {
+  color: azure;
+  display: block;
+  height: 2rem;
+  padding-inline-end: 2rem;
+}
+.menu-text-dark {
+  color: black;
+  display: block;
+  height: 2rem;
+  padding-inline-end: 2rem;
+}
+.menu-text-light:hover {
+  color: lightgrey;
+}
+.menu-text-dark:hover {
+  color: darkslategray;
+}
+/*Styling for the projects pancake*/
+.pancakePage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hotcakes {
+  flex: 0 1 150px;
+  margin: 20px;
+}
+/* These backgrounds follow content for longer components.*/
+.darkModeProject {
+  position: flex;
+  background-image: url("./Images/moon.jpg");
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10vh;
+  margin-bottom: 0px;
+}
+.lightModeProject {
+  position: flex;
+  background-image: url("./Images/hills.jpg");
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10vh;
+  margin-bottom: 0px;
+}
+/*carousel  customization for projects*/
+span.carousel-control-next-icon {
+  background-image: none;
+}
+span.carousel-control-prev-icon {
+  background-image: none;
+}
+img.carousel-image {
+  height: 22em;
+  min-width: 20em;
+}
+.carousel-label {
+  text-align: center;
+}
+/* Form rules*/
+.formContainer {
+  text-align: center;
+  justify-content: center;
+}
+.form-child {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+}
+.form-child:hover {
+  background-color: white;
+}
+.submit-button {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(41, 39, 46, 0.3);
+  width: 250px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+.submit-button:hover {
+  background-color: rgba(41, 39, 46, 0.7);
+}
+/* Footer Styles */
+.dark-footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: 20vh;
+  background-color: #343a40;
+  text-align: center;
+  padding: 4vh;
+}
+.light-footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: 20vh;
+  background-color: #17a2b8;
+  text-align: center;
+  padding: 4vh;
+}
+.icon-dark {
+  padding-left: 10vh;
+  color: azure;
+}
+.icon-light {
+  padding-left: 10vh;
+  color: black;
+}
+
+/*screen size rules for special situations. */
+@media only screen and (max-width: 700px) {
+  img.carousel-image {
+    height: 15em;
+    min-width: 12em;
+    max-width: 20em;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .icon-dark {
+    display: block;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .icon-light {
+    display: block;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  .dark-footer {
+    height: 100%;
+  }
+  .light-footer {
+    height: 100%;
+    bottom: 0px;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .icon-dark {
+    padding-left: 3vh;
+  }
+  .icon-light {
+    padding-left: 3vh;
+  }
+  .dark-footer {
+    padding: 0px;
+  }
+  .light-footer {
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .lightMode {
+    height: 90vh;
+  }
+  .darkMode {
+    height: 90vh;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  img.carousel-image {
+    height: 30em;
+    min-width: 25em;
+  }
+}
