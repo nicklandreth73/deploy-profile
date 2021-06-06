@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 
 function ProjectCard(props) {
-  const { name, codeLink, isDark, image1, image2, image3 } = props;
+  const { name, codeLink, siteLink, isDark, image1, image2, image3 } = props;
   const secondPic = (
     <Carousel.Item>
       <img className="carousel-image" src={image2} alt={name} />
@@ -15,7 +15,12 @@ function ProjectCard(props) {
     </Carousel.Item>
   );
   return (
-    <div className="hotcakes">
+    <div
+      className="hotcakes"
+      style={
+        isDark ? { backgroundColor: "#bdbdbd" } : { backgroundColor: "#686e78" }
+      }
+    >
       <h1 className="carousel-label">{name}</h1>
       <Carousel controls={image2 === "" ? false : true} indicators={false}>
         <Carousel.Item>
@@ -33,6 +38,17 @@ function ProjectCard(props) {
       >
         View Code
       </Button>
+      {siteLink && (
+        <Button
+          className="projectButton"
+          variant={isDark ? "secondary" : "dark"}
+          size="lg"
+          block
+          href={siteLink}
+        >
+          View Site
+        </Button>
+      )}
     </div>
   );
 }

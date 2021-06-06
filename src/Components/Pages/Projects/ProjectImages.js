@@ -10,6 +10,9 @@ import Mobile2 from "../../../Images/Projects/Mobile2.jpg";
 import Mobile3 from "../../../Images/Projects/Mobile3.jpg";
 import DarkMode from "../../../Images/Projects/DarkMode.png";
 import LightMode from "../../../Images/Projects/LightMode.png";
+import Thor1 from "../../../Images/Projects/Thor1.png";
+import Thor2 from "../../../Images/Projects/Thor2.png";
+import Thor3 from "../../../Images/Projects/Thor3.png";
 
 const ProjectImages = [
   {
@@ -19,6 +22,7 @@ const ProjectImages = [
     image3: Software13,
     codeLink:
       "https://github.com/nicklandreth73/JavaFX-parts-and-products-project/tree/master/Parts%20and%20products",
+    siteLink: null,
   },
   {
     name: "WGU Software 2 Project",
@@ -27,6 +31,7 @@ const ProjectImages = [
     image3: Software23,
     codeLink:
       "https://github.com/nicklandreth73/appointment-app/tree/master/src",
+    siteLink: null,
   },
   {
     name: "WGU C++ Books Project",
@@ -35,6 +40,7 @@ const ProjectImages = [
     image3: "",
     codeLink:
       "https://github.com/nicklandreth73/student-parse-project/tree/master/Student%20project%20c%2B%2B",
+    siteLink: null,
   },
   {
     name: "WGU Mobile App",
@@ -43,6 +49,7 @@ const ProjectImages = [
     image3: Mobile3,
     codeLink:
       "https://github.com/nicklandreth73/Schedulish/tree/master/app/src/main/java/com/example/schedulish",
+    siteLink: null,
   },
   {
     name: "React Profile Site",
@@ -50,6 +57,15 @@ const ProjectImages = [
     image2: LightMode,
     image3: "",
     codeLink: "https://github.com/nicklandreth73/react-profile",
+    siteLink: "https://nicklandreth73.github.io/deploy-profile/#/home",
+  },
+  {
+    name: "Thor Contracting Site",
+    image1: Thor1,
+    image2: Thor2,
+    image3: Thor3,
+    codeLink: "https://github.com/nicklandreth73/thor-contracting",
+    siteLink: "http://thorcontracting.org",
   },
 ];
 

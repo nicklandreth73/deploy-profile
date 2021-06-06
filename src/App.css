@@ -73,10 +73,14 @@ These classes will expand the background for smaller divs
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .hotcakes {
   flex: 0 1 150px;
   margin: 20px;
+  padding: 2vh;
+  border-radius: 20px;
 }
+
 /* These backgrounds follow content for longer components.*/
 .darkModeProject {
   position: flex;
@@ -95,7 +99,7 @@ These classes will expand the background for smaller divs
   background-image: url("./Images/hills.jpg");
   top: 0px;
   bottom: 0px;
-  height: 100%;
+  height: fit-content;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

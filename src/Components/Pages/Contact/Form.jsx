@@ -44,16 +44,18 @@ function Form({isDark}) {
   function handleChange(event) {
     const { name, value } = event.target;
     setFormInput((prevValue) => {
-      if (name === "fName")
-      return {...prevValue, fName: value};
-      else if (name === "lName")
-        return {...prevValue, lName: value};
-      else if (name === "email")
-      return {...prevValue, email: value};
-      else if (name === "phone")
-      return {...prevValue, phone: value};
-      else if (name === "message")
-      return {...prevValue, message: value};
+      switch (name) {
+        case "fName":
+          return {...prevValue, fName: value};
+        case "lName":
+          return {...prevValue, lName: value};
+        case "email":
+          return {...prevValue, email: value};
+        case "phone":
+          return {...prevValue, phone: value};
+        case "message":
+          return {...prevValue, message: value};
+    }
     });
   }
   // Actual JSX code

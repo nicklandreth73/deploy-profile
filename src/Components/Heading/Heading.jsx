@@ -6,7 +6,7 @@ import "../../App.css";
 
 function Heading(props) {
   const [expanded, setExpanded] = useState(false);
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
 
   function handleClick(isDark) {
     setIsDark(isDark);

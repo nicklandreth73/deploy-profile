@@ -1,3 +1,4 @@
+import { Card } from "@material-ui/core";
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectImages from "./ProjectImages";
@@ -8,17 +9,7 @@ function Projects({ isDark }) {
       <div className={isDark ? "lightText" : "darkText"}>
         <div className="pancakePage">
           {ProjectImages.map((ProjectObject) => {
-            const { name, image1, image2, image3, codeLink } = ProjectObject;
-            return (
-              <ProjectCard
-                name={name}
-                image1={image1}
-                image2={image2}
-                image3={image3}
-                codeLink={codeLink}
-                isDark={isDark}
-              />
-            );
+            return <ProjectCard {...ProjectObject} />;
           })}
         </div>
       </div>

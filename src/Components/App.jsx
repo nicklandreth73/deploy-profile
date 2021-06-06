@@ -9,7 +9,7 @@ import Contact from "./Pages/Contact/Contact";
 import Footer from "./Footer/Footer";
 
 export default function App() {
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
   function setThemeType(isDark) {
     if (isDark) {
       setIsDark(true);
